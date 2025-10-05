@@ -1,4 +1,4 @@
-/* Reset and basic body */
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,13 +11,14 @@ body {
   color: #333;
   line-height: 1.6;
   padding: 2rem;
+  overflow-x: hidden; /* prevent horizontal scroll */
 }
 
 /* Container */
 .container {
   background: #fff;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 4rem auto; /* top auto, bottom spacing */
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -51,7 +52,7 @@ p {
   text-align: center;
 }
 
-/* Option description */
+/* Option paragraph */
 .option p {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
@@ -63,7 +64,7 @@ button {
   width: 100%;
   max-width: 200px;
   height: 50px;
-  line-height: 50px;
+  line-height: 50px; /* vertically center text */
   border: none;
   border-radius: 10px;
   font-size: 1rem;
@@ -72,12 +73,12 @@ button {
   transition: transform 0.2s, background 0.2s;
 }
 
-/* Button hover effect */
+/* Hover effect */
 button:hover {
   transform: scale(1.05);
 }
 
-/* Button colors */
+/* Colors */
 .choices .option:first-child button {
   background: #3498db; /* blue */
 }
@@ -94,7 +95,7 @@ button:hover {
   background: #c0392b;
 }
 
-/* Responsive tweaks for small screens */
+/* Responsive for mobile */
 @media (max-width: 480px) {
   .choices {
     flex-direction: column;
@@ -103,7 +104,6 @@ button:hover {
   }
 
   button {
-    width: 100%;
     max-width: 100%;
   }
 }
