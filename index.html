@@ -54,7 +54,7 @@
   </div>
 
   <script>
-    const cc = '1723'; 
+    const cc = '1708';
     const input = document.getElementById('codeInput');
     const btn = document.getElementById('enterBtn');
     const msg = document.getElementById('msg');
@@ -66,7 +66,6 @@
 
     function checkCode() {
       if ((input.value || '').trim().toUpperCase() === cc.toUpperCase()) {
-        // correct, redirect to home.html
         window.location.href = 'home.html';
       } else {
         msg.style.display = 'block';
