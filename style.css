@@ -103,7 +103,7 @@ button:hover {
     align-items: center;
   }
 
-  /* button { */
-    /* max-width: 100%; */
-  /* } */
+  button {
+    max-width: 200px;
+  }
 }
